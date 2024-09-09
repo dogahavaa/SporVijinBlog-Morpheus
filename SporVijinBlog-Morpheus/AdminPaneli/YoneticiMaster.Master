@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YoneticiMaster.master.cs" Inherits="SporVijinBlog_Morpheus.AdminPaneli.YoneticiMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Spor Vijın - Yönetim Paneli </title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="CSS/YoneticiStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="ustPanel">
+            <div class="ustPanelSol" style="float:left">
+                <h2>Spor Vijın Blog</h2>
+                <h5>Yönetim Paneli</h5>
+            </div>
+            <div class="ustPanelSag" style="float:right">
+                <asp:Label ID="lbl_girisAdi" runat="server">Kullanıcı Adı(Seviye)</asp:Label>
+                <asp:LinkButton ID="lbtn_guvenliCikis" runat="server" Text="Güvenli Çıkış" CssClass="guvenliCikis" OnClick="lbtn_guvenliCikis_Click"></asp:LinkButton>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿*,h1,h2,h3,h4,h5,h6{
+    margin:0; padding:0;
+}
+body {
+    font-family: Montserrat;
+    color: #464646;
+    background-color: #f2f2f2;
+}
+.ustPanel {
+    background-color: #fe4358;
+    color:white;
+    padding:10px 50px;
+}
+.ustPanelSol h2{
+    font-weight:300;
+    font-size:20pt;
+}
+.ustPanelSag{
+    padding:12px 10px;
+}
+.guvenliCikis{
+    color:white;
+    padding-left:10px;
+}
