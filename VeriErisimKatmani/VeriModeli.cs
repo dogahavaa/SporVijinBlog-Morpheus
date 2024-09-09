@@ -66,5 +66,82 @@ namespace VeriErisimKatmani
             }
         }
 
+        #region Kategori İşlemleri
+
+        public bool KategoriEkle(Kategori kat)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Kategoriler(Isim, Aciklama, Durum) VALUES(@isim, @aciklama, @durum)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@isim", kat.Isim);
+                cmd.Parameters.AddWithValue("@aciklama", kat.Aciklama);
+                cmd.Parameters.AddWithValue("@durum", kat.Durum);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch 
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Kategori> KategoriListele()
+        {
+            try
+            {
+                List<Kategori> kategoriler = new List<Kategori>();
+                cmd.CommandText = "SELECT ID, Isim, Aciklama, Durum FROM Kategoriler";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Kategori kat = new Kategori();
+                    kat.ID = reader.GetInt32(0);
+                    kat.Isim = reader.GetString(1);
+                    kat.Aciklama =reader.GetString(2);
+                    kat.Durum = reader.GetBoolean(3);
+                    kategoriler.Add(kat);
+                }
+                return kategoriler;
+            }
+            catch 
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void KategoriDurumDegistir(int id)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT Durum FROM Kategoriler WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                bool durum = Convert.ToBoolean(cmd.ExecuteScalar());
+                cmd.CommandText = "UPDATE Kategoriler SET Durum = @durum WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@durum", !durum);
+                cmd.Parameters.AddWithValue("id", id);
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        #endregion
     }
 }

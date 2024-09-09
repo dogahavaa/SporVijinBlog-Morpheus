@@ -3,13 +3,12 @@
 }
 body {
     font-family: Montserrat;
-    color: #464646;
-    background-color: #f2f2f2;
+    color: #18091a;
+    background-color: #f8f1fa;
 }
 .ustPanel {
-    background-color: #fe4358;
-    color:white;
-    padding:10px 50px;
+    background-color: #d993a0;
+    padding: 10px 50px;
 }
 .ustPanelSol h2{
     font-weight:300;
@@ -22,3 +21,27 @@ body {
     color:white;
     padding-left:10px;
 }
+.solPanel {
+    height: 800px;
+    width: 200px;
+    background-color: #d993a0;
+    color: #cf8c76;
+    float: left;
+}
+.menu {
+    border-top: 1px solid #f8f1fa;
+}
+.menuSatir {
+    padding: 20px 10px;
+    border-right: 1px solid #f8f1fa;
+    border-bottom: 1px solid #f8f1fa;
+}
+    .menuSatir:hover {
+        background-color: #cf8c76;
+        cursor: pointer;
+    }
+    .menuSatir a {
+        text-decoration: none;
+        color: #18091a;
+        font-weight:500;
+    }

@@ -68,9 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPaneli\AdminGiris.aspx" />
+    <Content Include="AdminPaneli\CSS\FormStyle.css" />
     <Content Include="AdminPaneli\CSS\GirisStyle.css" />
+    <Content Include="AdminPaneli\CSS\ListStyle.css" />
     <Content Include="AdminPaneli\CSS\YoneticiStyle.css" />
+    <Content Include="AdminPaneli\Images\decision.png" />
     <Content Include="AdminPaneli\Images\login_background.jpg" />
+    <Content Include="AdminPaneli\KategoriEkle.aspx" />
+    <Content Include="AdminPaneli\KategoriListele.aspx" />
     <Content Include="AdminPaneli\YoneticiDefault.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -81,6 +86,20 @@
     </Compile>
     <Compile Include="AdminPaneli\AdminGiris.aspx.designer.cs">
       <DependentUpon>AdminGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\KategoriEkle.aspx.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\KategoriEkle.aspx.designer.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\KategoriListele.aspx.cs">
+      <DependentUpon>KategoriListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\KategoriListele.aspx.designer.cs">
+      <DependentUpon>KategoriListele.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPaneli\YoneticiDefault.aspx.cs">
       <DependentUpon>YoneticiDefault.aspx</DependentUpon>

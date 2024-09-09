@@ -17,15 +17,39 @@
 <body>
     <form id="form1" runat="server">
         <div class="ustPanel">
-            <div class="ustPanelSol" style="float:left">
+            <div class="ustPanelSol" style="float: left">
                 <h2>Spor Vijın Blog</h2>
                 <h5>Yönetim Paneli</h5>
             </div>
-            <div class="ustPanelSag" style="float:right">
+            <div class="ustPanelSag" style="float: right">
                 <asp:Label ID="lbl_girisAdi" runat="server">Kullanıcı Adı(Seviye)</asp:Label>
                 <asp:LinkButton ID="lbtn_guvenliCikis" runat="server" Text="Güvenli Çıkış" CssClass="guvenliCikis" OnClick="lbtn_guvenliCikis_Click"></asp:LinkButton>
             </div>
-            <div style="clear:both"></div>
+            <div style="clear: both"></div>
+        </div>
+
+        <div class="solPanel">
+            <div class="menu">
+                <div class="menuSatir">
+                    <a href="YoneticiDefault.aspx">Anasayfa</a>
+                </div>
+                <div class="menuSatir">
+                    <a href="KategoriEkle.aspx">Kategori Ekle</a>
+                </div>
+                <div class="menuSatir">
+                    <a href="KategoriListele.aspx">Kategorileri Listele</a>
+                </div>
+                <div class="menuSatir">
+                    <a href="#">Makale Ekle</a>
+                </div>
+                <div class="menuSatir">
+                    <a href="#">Makeleleri Listele</a>
+                </div>
+                <div class="menuSatir">
+                    <a href="#">Yönetici / Üye İşlemleri</a>
+                </div>
+            </div>
+
         </div>
 
 
