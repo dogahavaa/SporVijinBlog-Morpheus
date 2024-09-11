@@ -8,6 +8,8 @@ namespace VeriErisimKatmani
 {
     public class Kategori
     {
+        internal object aciklama;
+
         public int ID { get; set; }
         public string Isim { get; set; }
         public string Aciklama { get; set; }

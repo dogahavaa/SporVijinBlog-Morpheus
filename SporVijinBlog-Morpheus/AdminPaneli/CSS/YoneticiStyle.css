@@ -7,8 +7,9 @@ body {
     background-color: #f8f1fa;
 }
 .ustPanel {
-    background-color: #d993a0;
-    padding: 10px 50px;
+    background-color: #303C54;
+    padding: 10px 10px;
+    color: #dddddd;
 }
 .ustPanelSol h2{
     font-weight:300;
@@ -22,14 +23,11 @@ body {
     padding-left:10px;
 }
 .solPanel {
-    height: 800px;
+    height: 1200px;
     width: 200px;
-    background-color: #d993a0;
-    color: #cf8c76;
+    background-color: #3C4B64;
+    color: #F8F1FA;
     float: left;
-}
-.menu {
-    border-top: 1px solid #f8f1fa;
 }
 .menuSatir {
     padding: 20px 10px;
@@ -42,6 +40,6 @@ body {
     }
     .menuSatir a {
         text-decoration: none;
-        color: #18091a;
-        font-weight:500;
+        color: #F8F1FA;
+        font-weight: 500;
     }

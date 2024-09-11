@@ -39,14 +39,12 @@
         border-bottom: 1px solid silver;
         padding: 10px;
     }
-.tabloButon{
-    border-radius:4px;
-    padding:5px;
-    border:1px solid black;
+.tabloButon {
+    border-radius: 4px;
+    padding: 3px;
+    border: 1px solid #3C4B64;
+    margin-left: 7px;
 }
 .tabloButon img{
-    margin-bottom:-4px;
-}
-.durum {
-    background-color: #fffb3f;
+    margin-bottom:-3px;
 }
