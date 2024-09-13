@@ -79,6 +79,7 @@
     <Content Include="AdminPaneli\KategoriDuzenle.aspx" />
     <Content Include="AdminPaneli\KategoriEkle.aspx" />
     <Content Include="AdminPaneli\KategoriListele.aspx" />
+    <Content Include="AdminPaneli\MakaleEkle.aspx" />
     <Content Include="AdminPaneli\YoneticiDefault.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="AdminPaneli\KategoriListele.aspx.designer.cs">
       <DependentUpon>KategoriListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\MakaleEkle.aspx.cs">
+      <DependentUpon>MakaleEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\MakaleEkle.aspx.designer.cs">
+      <DependentUpon>MakaleEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPaneli\YoneticiDefault.aspx.cs">
       <DependentUpon>YoneticiDefault.aspx</DependentUpon>

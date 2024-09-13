@@ -40,7 +40,7 @@
                     <a href="KategoriListele.aspx">Kategorileri Listele</a>
                 </div>
                 <div class="menuSatir">
-                    <a href="#">Makale Ekle</a>
+                    <a href="MakaleEkle.aspx">Makale Ekle</a>
                 </div>
                 <div class="menuSatir">
                     <a href="#">Makeleleri Listele</a>

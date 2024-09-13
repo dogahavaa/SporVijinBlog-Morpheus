@@ -4,7 +4,7 @@
     <link href="CSS/ListStyle.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="tabloTasiyici" style="width: 1400px;">
+    <div class="tabloTasiyici" style="width: 1080px;">
         <div class="tabloBaslik">
             Kategorileri Listele
         </div>
