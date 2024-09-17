@@ -43,7 +43,7 @@
                     <a href="MakaleEkle.aspx">Makale Ekle</a>
                 </div>
                 <div class="menuSatir">
-                    <a href="#">Makeleleri Listele</a>
+                    <a href="MakaleListele.aspx">Makeleleri Listele</a>
                 </div>
                 <div class="menuSatir">
                     <a href="#">Yönetici / Üye İşlemleri</a>

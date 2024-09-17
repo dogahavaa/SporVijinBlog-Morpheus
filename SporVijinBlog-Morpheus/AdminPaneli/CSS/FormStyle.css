@@ -53,7 +53,7 @@
     border-radius: 7px;
     padding: 10px 20px;
     margin-top: 20px;
-    margin-left: 210px;
+/*    margin-left: 210px;*/
     margin-bottom: 20px;
 }
 
@@ -79,9 +79,14 @@
 }
 .sol{
     float:left;
-    width:546px;
+    width:550px;
+    
 }
-.sag{
-    float:left;
-    width:546px;
+.sag {
+    float: left;
+    width: 550px;
+}
+.ckEditorH{
+    min-height:425px;
+    max-height:426px;
 }

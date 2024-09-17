@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\SporVijinBlog-Morpheus",
-    "\\SporVijinBlog-Morpheus\\AdminPaneli"
+    "\\SporVijinBlog-Morpheus\\AdminPaneli",
+    "\\SporVijinBlog-Morpheus\\AdminPaneli\\CSS",
+    "\\SporVijinBlog-Morpheus\\Resimler",
+    "\\SporVijinBlog-Morpheus\\Resimler\\MakaleResimleri"
   ],
   "SelectedNode": "\\SporVijinBlog-Morpheus.sln",
   "PreviewInSolutionExplorer": false

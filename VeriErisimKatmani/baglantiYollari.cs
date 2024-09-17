@@ -8,8 +8,8 @@ namespace VeriErisimKatmani
 {
     public class baglantiYollari
     {
-        //public static string baglantiYolu = @"Data Source=DESKTOP-JLTMH59; Initial Catalog=SporVijin_DB; Integrated Security=True";
-        public static string baglantiYolu = @"Data Source=DESKTOP-I7A4JUR\SQLEXPRESS; Initial Catalog=SporVijin_DB; Integrated Security=True";
+        public static string baglantiYolu = @"Data Source=DESKTOP-JLTMH59; Initial Catalog=SporVijin_DB; Integrated Security=True";
+        //public static string baglantiYolu = @"Data Source=DESKTOP-I7A4JUR\SQLEXPRESS; Initial Catalog=SporVijin_DB; Integrated Security=True";
 
 
     }
