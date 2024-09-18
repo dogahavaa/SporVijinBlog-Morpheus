@@ -14,6 +14,7 @@
                         <tr>
                             <th>Kapak Resmi</th>
                             <th>ID</th>
+                            <th>Kategori</th>
                             <th>Başlık</th>
                             <th>Görüntüleme Sayısı</th>
                             <th>Durum</th>
@@ -29,6 +30,7 @@
                             <img src='../Resimler/MakaleResimleri/<%# Eval("KapakResim") %>' style="width:90px; height:60px;"/>
                         </td>
                         <td><%# Eval("ID") %></td>
+                        <td><%# Eval("Kategori") %></td>
                         <td><%# Eval("Baslik") %></td>
                         <td><%# Eval("GoruntulemeSayi") %></td>
                         <td><%# Eval("Durum") %></td>

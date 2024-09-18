@@ -24,7 +24,7 @@
                 </div>
                 <div class="satir">
                     Kategori<br />
-                    <asp:DropDownList ID="ddl_kategori" runat="server" CssClass="tbStyle" Style="width: 99%" DataTextField="Isim" DataValueField="ID"></asp:DropDownList>
+                    <asp:DropDownList ID="ddl_kategori" runat="server" CssClass="tbStyle" Style="width: 99%" DataTextField="Kategori" DataValueField="ID"></asp:DropDownList>
                 </div>
                 <div class="satir">
                     Kapak Resmi

@@ -12,6 +12,7 @@ namespace SporVijinBlog_Morpheus.AdminPaneli
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Makale makale = new Makale();
             VeriModeli vm = new VeriModeli();
             if (!IsPostBack)
             {
@@ -19,8 +20,12 @@ namespace SporVijinBlog_Morpheus.AdminPaneli
                 {
                     ddl_kategori.DataSource = vm.MakaleListele();
                     ddl_kategori.DataBind();
-
-                    Makale makale = vm.MakaleGetir(int id);
+                    int id = Convert.ToInt32(Request.QueryString["makaleId"]);
+                    makale = vm.MakaleGetir(id);
+                    tb_baslik.Text = makale.Baslik;
+                    tb_aciklama.Text = makale.Icerik;
+                    ddl_kategori.SelectedValue = Convert.ToString(makale.KategoriID);
+                    cb_durum.Checked = makale.Durum;
                 }
             }
         }

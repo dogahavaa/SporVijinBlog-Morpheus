@@ -411,8 +411,9 @@ namespace VeriErisimKatmani
         {
             try
             {
-                cmd.CommandText = "SELECT M.ID, M.KategoriID, K.Isim, M.YazarID, Y.KullaniciAdi, M.Baslik, M.Icerik, M.EklemeTarihi, M.GoruntulemeSayi, M.KapakResim, M.Durum FROM Makaleler AS M JOIN Kategoriler AS K ON K.ID = M.KategoriID JOIN Yoneticiler AS Y ON Y.ID = M.YazarID";
+                cmd.CommandText = "SELECT M.ID, M.KategoriID, K.Isim, M.YazarID, Y.KullaniciAdi, M.Baslik, M.Icerik, M.EklemeTarihi, M.GoruntulemeSayi, M.KapakResim, M.Durum FROM Makaleler AS M JOIN Kategoriler AS K ON K.ID = M.KategoriID JOIN Yoneticiler AS Y ON Y.ID = M.YazarID WHERE M.ID=@id";
                 cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
                 Makale mak = new Makale();
